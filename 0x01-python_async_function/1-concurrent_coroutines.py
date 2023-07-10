@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """ Let's excute multiple coroutines at the same time with async """
 import asyncio
+from typing import List
+wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list[float]:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """ Create wait_random task n times.
         Args:
             n (int): no of times for task
