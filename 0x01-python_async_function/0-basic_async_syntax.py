@@ -4,7 +4,7 @@ import asyncio
 import random
 
 
-async def wait_random(mx_delay: int = 10) -> float:
+async def wait_random(max_delay: int = 10) -> float:
     """ Corotine that takes in an integer
         Args:
             max_delay (int): maximum delay
